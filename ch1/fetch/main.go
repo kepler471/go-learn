@@ -18,6 +18,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
 			os.Exit(1)
 		}
+		fmt.Printf("HTTP status code: %v", resp.StatusCode)
 		b, err := ioutil.ReadAll(resp.Body)
 		resp.Body.Close()
 		if err != nil {
