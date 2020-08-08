@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// TODO move exercises to the programs they are built from
 func main() {
 	// prints entire output from os.Args
 	fmt.Println(os.Args)
